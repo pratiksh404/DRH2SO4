@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Accessing Form Elements</title>
+</head>
+<body>
+   <form action="" name='pratik'>
+       
+              name: <input type="text" name="text">
+   password: <input type="password" name="password">
+   <input type="checkbox" name="box">
+   <input type="submit" value="submit" onclick="validator()">
+   
+   </form>
+    <script type="text/javascript">
+    
+var x = document.forms[0].firstElementChild.name;
+        document.write(x);
+        
+        function validator(){
+            if(document.pratik.element[2].noCloneChecked){
+                alert('checked');
+            }
+            else{
+                alert.('not checked');
+            }
+        }
+    </script>
+</body>
+</html>

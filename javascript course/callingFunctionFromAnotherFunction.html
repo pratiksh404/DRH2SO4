@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calling function from another function</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function myFirst(){
+        document.write("This is nuts" + "<br>");
+    }
+        function mySecond(){
+            document.write("I was wrong" + "<br>")
+        }
+        function callmeBabe(){
+            myFirst();
+            mySecond();
+        }
+        callmeBabe();
+    </script>
+</body>
+</html>

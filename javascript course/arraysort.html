@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array sort</title>
+</head>
+<body>
+       <button onclick="myFunction()">ascending</button>
+    <p id="demo"> </p>
+
+   <button onclick="mySuper()">string ascending</button>
+   <p id="stringsort"></p>
+   <br>
+   <h4>array sort type:</h4>
+   <hr>
+   <button onclick="myLowalpha()">alphabetical sort</button>
+   <button onclick="myLownum()">numerical sort</button>
+   <p id="lowest"></p>
+    <p id="max"></p>
+    <p id="min"></p>
+    <script>
+    var points = [20 , 5 , 12 , 55 , 1];
+        document.getElementById('demo').innerHTML=points;
+        function myFunction(){
+            points.sort(function(a,b){return a - b});
+            document.getElementById('demo').innerHTML=points;
+        }
+        
+        var mySuperhero = ["batman" , "superman" , "aquaman"];
+        document.getElementById('stringsort').innerHTML=mySuperhero;
+        function mySuper(){
+            mySuperhero.sort();
+            document.getElementById('stringsort').innerHTML=mySuperhero;
+        }
+        var low =[90 , 2 , 12 , 22 , 3];
+        document.getElementById('lowest').innerHTML=low;
+        function myLowalpha(){
+            low.sort();
+            document.getElementById('lowest').innerHTML=low;
+        }
+        function myLownum(){
+            low.sort(function(a , b){return a - b});
+            document.getElementById('lowest').innerHTML=low;
+        }
+     
+            low.sort(function(a ,b){return a-b});
+            document.getElementById('max').innerHTML=low[0];
+
+            low.sort(function(a ,b){return b-a});
+            
+            document.getElementById('min').innerHTML=low[0];
+  
+    
+    </script>
+</body>
+</html>

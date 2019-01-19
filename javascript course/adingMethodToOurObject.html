@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function person(name, age){
+            this.name = name;
+            this.age = age;
+            this.minus = minusfromhundred;
+        }
+        function minusfromhundred(){
+            var result = 100 - this.age;
+            return result;
+        }
+        
+        var pratik = new person("pratik shrestha", 20);
+        document.write(pratik.name + " is " + pratik.age + " and minus from hundred is " + pratik.minus());
+    </script>
+</body>
+</html>

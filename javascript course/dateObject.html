@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Objects</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+    function myBatman(){
+        document.write(" im batman ");
+    }
+        setInterval('myBatman()', 1000);
+        function myTime(){
+            var x = new Date();
+            var hours = x.getHours();
+            var mins = x.getMinutes();
+            var secs = x.getSeconds();
+            document.write(hours + ':' + mins + ':' + secs);
+        }
+        setInterval('myTime()', 1000)
+        
+    </script>
+</body>
+</html>

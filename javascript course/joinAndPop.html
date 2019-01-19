@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join And Pop</title> 
+</head>
+<body>
+<!--    converts array into string   -->
+<script type="text/javascript">
+    
+    var friends = ['pratik', 'sanam', 'hada', 'kiran', 'rabin', 'parjanya', 'manish'];
+    
+    var friends1 = friends.join();     //converts array into string
+    var friends2 = friends.join('-');
+    document.write(friends1 + '<br>');
+    document.write(friends2 + '<br>');
+    friends.pop();
+    var friends3 = friends.join();    //delets last element
+    document.write(friends3 + '<br>');
+    friends.push('simanta', 'sandesh');
+    var friends4 = friends.join();
+    document.write(friends4);
+    </script>
+</body>
+</html>

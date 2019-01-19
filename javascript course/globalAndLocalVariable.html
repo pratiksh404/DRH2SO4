@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>global and local variable</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var she="heart"; //she was the global variable for entire program
+        function toHer(){
+            var me = "A random guy"; //i am local variable to function toher()
+            document.write(me + " gave his ");
+        }
+        toHer();
+        document.write(she);
+    </script>
+</body>
+</html>

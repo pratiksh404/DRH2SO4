@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+
+</head>
+<body>
+    <p id="demo"></p>
+        <script>
+    var obj={type:"DR", color:"H2SO4"};
+        document.getElementById("demo").innerHTML = obj.type + obj.color;
+            
+    function person(name, age){
+        //blue-print...contructor function
+        this.name = name;
+        this.age = age;
+    }
+            var pratik = new person("pratik shrestha", 20);  //creating an instance of object whenever crating an instance must use new followed by existing bluprint
+            var prashant= new person("prashant shrestha", 10);
+            document.write(pratik.name + pratik.age + '<br>');
+             document.write(prashant.name + prashant.age);
+    </script>
+</body>
+</html>

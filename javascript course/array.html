@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+
+</head>
+<body>
+    <p id="badass"></p>
+       <p id="bvs"
+       ></p>
+        <script>
+    
+    var fruit, text, len, i;
+       fruit = ["batman", "joker", "scarescrow", "bane"];
+        len = fruit.length;
+         text = "<ul>";
+        for (i = 0; i < len; i++){
+            text += "<li>" + fruit[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("badass").innerHTML = text;
+            
+            var person = [];
+            person[0] = "batman";
+            person[1] = "superman";
+            person[2] = "thanos";
+        document.getElementById('bvs').innerHTML = person[0] + " " + person.length;
+    </script>
+</body>
+</html>
